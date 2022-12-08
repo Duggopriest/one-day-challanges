@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"pathing.h": "c",
+		"stdlib.h": "c",
+		"types.h": "c",
+		"math.h": "c"
+	}
+}
