@@ -5,7 +5,7 @@ void	draw_map(t_render *r)
 	int x;
 	int y;
 
-	int size = 30;
+	int size = 100;
 
 	y = 0;
 	while(y < r->map_h)

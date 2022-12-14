@@ -35,9 +35,9 @@ int	keypress(int k, t_render *r)
 
 int	render_next_frame(t_render *r)
 {
-	if (!run_algo(r))
-		reset_map(r);
-	draw_map(r);
+	// if (!run_algo(r))
+	// 	reset_map(r);
+	// draw_map(r);
 	//usleep(100000);
 	return (1);
 }
@@ -55,11 +55,11 @@ int	main(int argc, char **argv)
 
 	r->map_size = 40;
 
-	//set_up_grid(r, argv[1]);
-	randomized_map(r->map_size, r);
+	set_up_grid(r, argv[1]);
+	//randomized_map(r->map_size, r);
 
-	r->win_w = r->map_w * 30; // 100 comes from the size of the img
-	r->win_h = r->map_h * 30;
+	r->win_w = r->map_w * 100; // 100 comes from the size of the img
+	r->win_h = r->map_h * 100;
 	r->mlx = mlx_init();
 	r->mlx_win = mlx_new_window(r->mlx, r->win_w, r->win_h, "pathing algo");
 
